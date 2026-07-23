@@ -1,15 +1,15 @@
- #ifndef COURSE_RESULT_H
- #define COURSE_RESULT_H
+#ifndef COURSE_RESULT_H
+#define COURSE_RESULT_H
 
- #include "course.h"
+#include "course.h"
 
- typedef struct CourseResult
- {
+typedef struct CourseResult
+{
     Course *course;
     double marks;
- } CourseResult;
+} CourseResult;
 
- CourseResult createCourseResult(Course *course, double marks);
- void viewCourseResult(CourseResult result);
+CourseResult createCourseResult(Course *course, double marks);
+void viewCourseResult(CourseResult result);
 
- #endif
+#endif
