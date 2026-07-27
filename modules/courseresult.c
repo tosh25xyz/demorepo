@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "courseresult.h"
+#include "courseResult.h"
 
 CourseResult createCourseResult(Course *course, double marks)
 {

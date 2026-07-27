@@ -18,5 +18,3 @@ Run:
 ```
 chmod +x calculator.out
 ./calculator.out
-```ulator.exe
-```

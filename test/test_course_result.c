@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "course.h"
-#include "courseresult.h"
+#include "courseResult.h"
 
 int testResultCourse()
 {
