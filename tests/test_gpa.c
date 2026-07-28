@@ -33,6 +33,12 @@ int testLetterGrade()
     return getLetterGrade(result)[0] == 'A' && getLetterGrade(result)[1] == '-';
 }
 
+int testExpectedCGPA()
+{
+    double expected = calculateExpectedCGPA(3.50, 90, 4.00, 30);
+    return expected > 3.62 && expected < 3.63;
+}
+
 int main()
 {
     printf("GPA module tests\n");
@@ -45,6 +51,8 @@ int main()
     if (testGradePoint()) passed++;
     total++;
     if (testLetterGrade()) passed++;
+    total++;
+    if (testExpectedCGPA()) passed++;
 
     printf("Passed %d/%d tests\n", passed, total);
     if (passed == total) return 0;
